@@ -1,0 +1,164 @@
+.footer {
+  background: #000; /* 🔥 full black */
+  color: #ddd;
+  padding-top: 60px;
+
+  /* ✅ FIX: ensure it behaves like normal block */
+  position: relative;
+  width: 100%;
+  clear: both; /* prevents overlap */
+  margin-top: 60px; /* adds space from above content */
+}
+
+/* LAYOUT */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px 50px;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* LOGO */
+.logo {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* SOCIALS */
+.socials {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials svg {
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.socials svg:hover {
+  transform: translateY(-5px) scale(1.2);
+  color: #2c8f7b;
+}
+
+/* LINKS */
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #2c8f7b;
+  padding-left: 5px;
+}
+
+/* LOCATION */
+.direction {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.direction:hover {
+  color: #2c8f7b;
+}
+
+/* HOURS */
+.hours {
+  margin-bottom: 15px;
+}
+
+.hours svg {
+  margin-right: 8px;
+  color: #2c8f7b;
+}
+
+.hours span {
+  display: block;
+  margin-left: 22px;
+  color: #fff;
+}
+
+/* STATUS */
+.status {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.status.open {
+  color: #2c8f7b;
+}
+
+.status.closed {
+  color: #ff4d4d;
+}
+
+/* BUTTON */
+.reserve-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background: #2c8f7b;
+  transform: scale(1.05);
+  border: none;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #222;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #aaa;
+  background: #000; /* ensure consistent black */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 30px 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,530 @@
+/* About.css */
+.about-page {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Story Section */
+.story-section {
+  padding: 6rem 0;
+  background: #fef9f0;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e2f;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #ff6b6b;
+}
+
+.story-description p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.story-description .lead {
+  font-size: 1.2rem;
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e2f;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #999;
+  line-height: 1.5;
+}
+
+.story-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+  transform: scale(1.05);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.experience-badge .years {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+
+.experience-badge .text {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #ff6b6b, #ff5252);
+  padding: 4rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-card {
+  color: white;
+  animation: fadeInUp 0.8s ease;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.philosophy-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.philosophy-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.quote-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.quote-overlay p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.philosophy-text h2 {
+  font-size: 2rem;
+  color: #2c3e2f;
+  margin-bottom: 1rem;
+}
+
+.philosophy-text > p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.value-item {
+  padding: 1rem;
+  background: #fef9f0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateX(10px);
+  background: #ffe8d4;
+}
+
+.value-item span:first-child {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.value-item strong {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #2c3e2f;
+}
+
+.value-item p {
+  display: inline;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Chefs Section */
+.chefs-section {
+  padding: 6rem 0;
+  background: #fef9f0;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.chefs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.chef-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.chef-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.chef-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.chef-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.chef-card:hover .chef-image img {
+  transform: scale(1.1);
+}
+
+.chef-rating {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,107,107,0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.chef-info {
+  padding: 1.5rem;
+}
+
+.chef-info h3 {
+  font-size: 1.5rem;
+  color: #2c3e2f;
+  margin-bottom: 0.3rem;
+}
+
+.chef-title {
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.chef-details {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid #f0e0d0;
+  border-bottom: 1px solid #f0e0d0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.detail-item span:first-child {
+  font-size: 1rem;
+}
+
+.chef-quote {
+  margin: 1rem 0;
+  font-style: italic;
+  color: #999;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  background: #fef9f0;
+  border-radius: 10px;
+}
+
+.chef-signature {
+  font-size: 0.85rem;
+  color: #2c3e2f;
+  margin: 1rem 0;
+}
+
+.chef-social {
+  font-size: 0.85rem;
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #2c3e2f, #1e2a20);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255,107,107,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .story-content,
+  .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .features-grid,
+  .stats-grid,
+  .chefs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid,
+  .stats-grid,
+  .chefs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .stats-section {
+    padding: 2rem 0;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .chef-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-badge {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.5rem;
+  }
+  
+  .experience-badge .years {
+    font-size: 1.2rem;
+  }
+  
+  .quote-overlay p {
+    font-size: 0.8rem;
+  }
+}
